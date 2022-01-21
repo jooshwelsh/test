@@ -2,7 +2,9 @@
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
-
+      # If there are multiple projects they must specifically reference
+      
+      
 name: Move assigned card
 on:
   issues:
@@ -12,8 +14,7 @@ jobs:
   move-assigned-card:
     runs-on: ubuntu-latest
     steps:
-      # If there are multiple projects they must specifically reference
-      #- uses: alex-page/github-project-automation-plus@5bcba1c1c091a222584d10913e5c060d32c44044
+      - uses: alex-page/github-project-automation-plus@5bcba1c1c091a222584d10913e5c060d32c44044
         with:
           project: test
           column: in progress
